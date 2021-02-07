@@ -1,13 +1,13 @@
 import React from 'react';
 
-const HelloWorld = () => (
+const HelloWorld: React.FunctionComponent = () => (
     <>
         <h1>Hello World</h1>
-        <hr/>
+        <hr />
         <h3>Test react/ts application</h3>
         <div>{process.env.NAME}</div>
         <div>{process.env.VERSION}</div>
     </>
 );
 
-export default HelloWorld
+export default HelloWorld;
