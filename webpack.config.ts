@@ -25,6 +25,10 @@ const config = (env: any): Configuration => ({
                     transpileOnly: true
                 },
                 exclude: /dist/,
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },
